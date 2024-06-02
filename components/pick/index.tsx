@@ -4,7 +4,7 @@ import { getEmoji } from "@/utils/pick";
 export default function Pick({ pick }: { pick: ContentExcludedPick }) {
   return (
     <div className="bg-white shadow-md rounded-lg p-6">
-      <h2 className="text-xl font-semibold mb-4">
+      <h2 className="text-xl font-semibold mb-4 truncate">
         ({getEmoji(pick.type)}) {pick.title}
       </h2>
       <img
